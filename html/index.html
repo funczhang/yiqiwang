@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>易企网</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<!-- 总体布局 -->
+	<div class="layout">
+		<!-- 头部分开始 -->
+		<div class="header">
+			<!-- 头部上部分 -->
+			<div class="header-top">
+				<div class="header-top-wrapper">
+					<div class="header-top-wrapper-left l">
+						<span class="f12 lh34 g6">欢迎您，</span>
+						<a href="#" class="f12 lh34 g5f">某某公司</a>
+						<a href="#" class="f12 lh34 ml20 g6">退出</a>
+						<a href="#" class="email vt ml30 mt10 iblock rel">
+							<img src="../images/red_dot.png" class="remind-unhandle-email abs">
+						</a>
+					</div>
+					<div class="header-top-wrapper-right r">
+						<a href="#" class="f12 wh lh21 ml10">易户网</a>
+						<span class="division wh">|</span>
+						<a href="#" class="f12 wh lh21">易社网</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- 头部下部分 -->
+			<div class="header-down">
+				<div class="header-down-wrapper center rel">
+					<div class="header-down-wrapper-left ml12 mt60 l rel">
+						<a href="#"><img src="../images/icon_logo.png" class="logo vt"></a>
+						<span class="city-option ml10 wh mt30 vt poi">合肥</span>
+						<span class="slideLogo triangle mt35 vt ml10 poi abs"></span>
+						<!-- ------------选择城市 -->
+						<ul class="city-slide-option abs hide">
+						</ul>
+					</div>
+					<ul class="header-down-wrapper-right r">
+						<li class="main-nav-item r tc poi">
+							<a href="../html/loan-page.html" class="main-nav-font f18 wh" target="mainIframe">
+							<i class="iconfont icon-1 wh f42 block mt45"></i>						
+							贷款</a>
+						</li>	
+						<li class="place main-nav-item r tc  poi">
+							<a href="../html/place-page.html" class="main-nav-font f18 wh" target="mainIframe">
+							<i class="iconfont icon-dingwei wh f42 block mt45"></i>						
+							场地</a>
+						</li>
+						<li class="work main-nav-item r tc poi">
+							<a href="../html/work-page.html" class="main-nav-font f18 wh" target="mainIframe">
+							<i class="iconfont icon-fuwuleibiedaizhao wh f42 block mt45"></i>
+							办事</a>
+						</li>						
+						<li class="first-page main-nav-item r tc poi  gradual">
+							<a href="../html/home-page.html" class="main-nav-font f18 wh mt" target="mainIframe">
+							<i class="iconfont icon-shouyeshouye wh f42 block mt45"></i>
+							首页</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部分结束 -->
+		<!-- 主体内容开始 -->
+	<div class="main">
+			<div class="main-content">
+				<iframe src="../html/home-page.html" scrolling="no" id="mainIframe" class="main-iframe" name="mainIframe"></iframe>
+			</div>
+		
+		<!-- 主体内容结束 -->
+		<!-- 脚部开始 -->
+		<div class="footer">
+			<div class="footer-wrapper">
+				<p class="copyright tc lh70">技术支持 科大讯飞股份有限公司</p>
+			</div>
+		</div>
+		<!-- 脚部结束 -->
+		<script type="text/javascript" src="../js/require-config.js"></script>
+		<script type="text/javascript" src="../js/plugins/require.js" data-main="../js/apps/service/index-service.js"></script>
+	</div>
+	</div>
+	<script type="text/html" id="cityTmpl">
+		{{each $data as value i}}
+			<li class="poi wh ell">{{value.option}}</li>
+		{{/each}}
+	</script>
+</body>
+</html>

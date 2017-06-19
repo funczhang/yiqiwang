@@ -1,0 +1,21 @@
+{
+    "flag": true,
+    "msg": "操作成功",
+    "picData": [{
+        "id": "0",
+        "imgUrl": "../images/img00.png",
+        "imgTitle": "世界第一剑豪 鹰眼米霍克"
+    }, {
+        "id": "1",
+        "imgUrl": "../images/img01.png",
+        "imgTitle": "要成为海贼王的男人路飞"
+    }, {
+        "id": "2",
+        "imgUrl": "../images/img02.png",
+        "imgTitle": "三刀流索隆 未来的世界第一剑豪，让自己的名字响彻天堂 "
+    }, {
+        "id": "3",
+        "imgUrl": "../images/img03.png",
+        "imgTitle": "妮可罗宾 我要活下去的"
+    }]
+}

@@ -1,0 +1,81 @@
+{
+	"flag": "true",
+    "msg": "操作成功",
+    "handleAffairs": [
+        {
+            "id": "0",
+            "name": "icon_by",
+            "value": "兵役"
+        },
+        {
+            "id": "1",
+            "name": "icon_sb",
+            "value": "社保"
+        },
+        {
+            "id": "2",
+            "name": "icon_sfgz",
+            "value": "司法公正"
+        },
+        {
+            "id": "3",
+            "name": "icon_shjy",
+            "value": "社会救援"
+        },
+        {
+            "id": "4",
+            "name": "icon_swbz",
+            "value": "死亡殡葬"
+        },
+        {
+            "id": "5",
+            "name": "icon_sysy",
+            "value": "生育收养"
+        },
+        {
+            "id": "6",
+            "name": "icon_whty",
+            "value": "文化体育"
+        },
+        {
+            "id": "7",
+            "name": "icon_xfwq",
+            "value": "消费维权"
+        },
+        {
+            "id": "8",
+            "name": "icon_yl",
+            "value": "医疗"
+        },
+        {
+            "id": "9",
+            "name": "icon_zf",
+            "value": "住房"
+        },
+        {
+            "id": "10",
+            "name": "icon_zscq",
+            "value": "知识产权"
+        },
+        {
+            "id": "11",
+            "name": "icon_crj",
+            "value": "出入境"
+        },
+        {
+            "id": "12",
+            "name": "icon_zyzg",
+            "value": "职业资格"
+        },
+        {
+            "id": "13",
+            "name": "icon_hj",
+            "value": "户籍"
+        },
+        {
+            "id": "14",
+            "name": "icon_hy",
+            "value": "婚姻"
+        }
+    ]
+}

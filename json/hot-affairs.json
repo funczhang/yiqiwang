@@ -1,0 +1,41 @@
+{
+    "flag": true,
+    "msg": "操作成功",
+    "hotAffairsList": [
+        {
+            "id": "01",
+            "hotFlag": true,
+            "title": "建设项目用地预审",
+            "apartment": "部门：市国土局",
+            "address": "地址：市行政服务中心"
+        },
+        {
+            "id": "02",
+            "hotFlag": true,
+            "title": "工业“小巨人”培育企业",
+            "apartment": "部门：市发改委",
+            "address": "地址：市行政服务中心"
+        },
+        {
+            "id": "03",
+            "hotFlag": true,
+            "title": "有限责任公司设立登记",
+            "apartment": "部门：市工商局",
+            "address": "地址：市行政服务中心"
+        },
+        {
+            "id": "04",
+            "hotFlag": false,
+            "title": "污染物排放申报登记",
+            "apartment": "部门：市环保局",
+            "address": "地址：市行政服务中心"
+        },
+        {
+            "id": "05",
+            "hotFlag": false,
+            "title": "污染物排放申报登记",
+            "apartment": "部门：市环保局",
+            "address": "地址：市行政服务中心"
+        }
+    ]
+}

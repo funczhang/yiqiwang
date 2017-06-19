@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>Htmlogs.cn程序员家园</title>
+<meta name="Keywords" content="Htmlogs.cn程序员家园" />
+<meta name="Description" content="Htmlogs.cn程序员家园" />
+</head>
+<script language="JavaScript">
+<!--
+var srcX = 2592; //原图大小,可以任意设置
+var srcY = 1944;
+var bigX = 500; //预览窗大小,可以任意设置
+var bigY = 375;
+var smallX = 500; //缩略图宽度
+var smallY = srcY * smallX / srcX;
+var viewX = bigX / srcX * smallX; //预览范围
+var viewY = bigY / srcY * smallY;
+var bl = srcX / smallX;//缩小比例
+var border = 1; //边框
+window.onload=function (){
+//head.innerHTML="图片载入";
+smallpic.width=smallX;
+smallpic.height=smallY;
+bigpic.width=srcX;
+bigpic.height=srcY;
+view.style.width=viewX;
+view.style.height=viewY;
+smallbox.style.borderWidth=border;
+bigbox.style.borderWidth=border;
+if (window.event){
+smallbox.style.width=smallpic.offsetWidth+border*2;
+smallbox.style.height=smallpic.offsetHeight+border*2;
+bigbox.style.width=bigX+border*2;
+bigbox.style.height=bigY+border*2;
+}else{
+smallbox.style.width=smallpic.offsetWidth;
+smallbox.style.height=smallpic.offsetHeight;
+bigbox.style.width=bigX;
+bigbox.style.height=bigY;
+}
+move(event);
+}
+function move(e){
+var e = window.event?window.event:e;
+var iebug = 0;
+if (window.event){
+var vX = e.offsetX - viewX/2;
+var vY = e.offsetY - viewY/2;
+}else{
+var vX = e.pageX - viewX/2 - smallbox.offsetLeft - border;
+var vY = e.pageY - viewY/2 - smallbox.offsetTop - border;
+iebug = 2;
+}
+if (vX  < 0) vX = 0;
+if (vY  < 0) vY = 0;
+if (vX > smallX - viewX - iebug) vX = smallX - viewX - iebug;
+if (vY > smallY - viewY - iebug) vY = smallY - viewY - iebug;
+bigpico.style.marginLeft = - vX * bl 
+bigpico.style.marginTop = - vY * bl 
+view.style.left = vX + smallbox.offsetLeft + border;
+view.style.top = vY + smallbox.offsetTop + border;
+}
+function aa(){
+document.getElementByIdx('bigbox').style.display="none";
+document.getElementByIdx('view').style.border="none";
+}
+function bb(){
+ document.getElementByIdx('bigbox').style.display="block";
+ document.getElementByIdx('view').style.border="1px solid #FF9900";
+ //document.getElementByIdx('view').style.background="#009999";
+// document.getElementByIdx('view').style.filter="alpha(opacity=40)";
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+*{padding:0;margin:0;}
+img{display:block;}
+#smallbox{border:1px #EBEBEB solid;overflow:hidden; width:338px; position:relative;}
+#bigbox{border:1px #EBEBEB solid;overflow:hidden; position:absolute; left:370px; top:0px; display:none}
+#view{position:absolute;}
+//-->
+</style>
+<body>
+<div id="smallbox"  onMouseOver="bb()" onMouseOut="aa()"> <img src="../images/5.jpg" name="smallpic" border="0" id="smallpic" onMouseMove="move(event)">
+<div id="view" onMouseMove="move(event)" onMouseOver="bb()" onMouseOut="aa()" > </div>
+</div>xzczxc
+<div id="bigbox"> <div id="bigpico"> <img src="http://www.yiqianmi.com/u/33/images/4Dx7Xc5Bl2Bo2Mf8Fc0Tq.jpg" name="bigpic"border="0" id="bigpic"> </div>
+</div>
+</body>

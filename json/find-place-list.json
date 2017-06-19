@@ -1,0 +1,42 @@
+{
+    "flag": "true",
+    "msg": "操作成功",
+    "placeList": [
+        {
+            "id": "0",
+            "imgUrl": "../images/pic_place01.png",
+            "title": "安徽尚美文化创意楼出租",
+            "address": "鸠江经济开发区沿江高速南出入口",
+            "rentalPrice": "租金：42元/平方米/月",
+            "area": "2000m2",
+            "updateDate": "更新日期：2015-07-16"
+        },
+        {
+            "id": "1",
+            "imgUrl": "../images/pic_place02.png",
+            "title": "安徽尚美文化创意楼出租",
+            "address": "鸠江经济开发区沿江高速南出入口",
+            "rentalPrice": "42",
+            "area": "2000",
+            "updateDate": "2015-07-16"
+        },
+        {
+            "id": "2",
+            "imgUrl": "../images/pic_place01.png",
+            "title": "安徽尚美文化创意楼出租",
+            "address": "鸠江经济开发区沿江高速南出入口",
+            "rentalPrice": "42",
+            "area": "2000",
+            "updateDate": "2015-07-16"
+        },
+        {
+            "id": "3",
+            "imgUrl": "../images/pic_place02.png",
+            "title": "安徽尚美文化创意楼出租",
+            "address": "鸠江经济开发区沿江高速南出入口",
+            "rentalPrice": "42",
+            "area": "2000",
+            "updateDate": "2015-07-16"
+        }
+    ]
+}
